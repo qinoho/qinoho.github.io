@@ -1,0 +1,158 @@
+ #top_player {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 50%;
+  background-color: #4a4a4a;
+  /* box-shadow: 5px 0px 5px 1px #7d7d7d; */
+  border-bottom: #626262 1px solid;
+}
+
+#top_player > #music_info {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaaaaa;
+}
+
+
+#top_player > #music_info > #player_img {
+  width: 30%;
+  height: 80%;
+  text-align: center;
+}
+
+/*
+
+#top_player > #music_info > #player_img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+*/
+#top_player > #music_info > #player_img > img {
+  border-radius: 5px; 
+}
+
+#top_player > #player_container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+#player_gui {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+
+#player_gui > #player_poccess{
+  height: 15px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#player_gui > #player_poccess > #player_poccess_line {
+  margin-top: 15px;
+  height: 3px;
+  background-color: #313132;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#player_gui > #player_poccess > #player_poccess_line > span {
+  font-size: 12px;
+  margin: 5px;
+}
+
+
+#player_gui > #player_poccess > #player_poccess_line > span:first-child {
+  margin-top: -7px;
+  margin-left: -50px;
+}
+#player_gui > #player_poccess > #player_poccess_line > span:last-child {
+  margin-top: -7px;
+  margin-right: -50px;
+}
+
+#player_gui > #player_poccess > #player_poccess_block {
+  height: 3px;
+  background-color: #7474cc;
+  width: 0;
+  position: relative;
+  top: -3px;
+}
+
+#player_gui > #player_poccess > #player_poccess_block > span {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 13px 6px #7474cc;
+  background-color: #dddddd;
+  position: absolute;
+  right: 0;
+  top: -3px;
+}
+
+#player_gui > #player_poccess > #player_poccess_block > span:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#player_gui > #player_controller {
+  margin: 0 auto;
+  width: 40%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#player_gui > #player_controller > span > svg {
+  height: 13px;
+  width: 13px;
+}
+
+#player_gui > #player_controller > span:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#player_gui > #player_controller > #toggle_play_pause > svg {
+  height: 15px;
+  width: 15px;
+} 
+
+#top_player > #player_list {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top_player > #player_list > button {
+  border-radius: 5px;
+  background-color: #444444;
+  border-style: none;
+}
+#top_player > #player_list > button > svg{
+  height: 18px;
+  width: 18px;
+}
+#top_player > #player_list > button:hover{
+  cursor: pointer;
+  fill: #aaa;
+  /*或者*/
+  stroke:#aaa;
+}
+#top_player > #player_list > button:active {
+  background-color: #313132;
+  border-radius: 5px;
+}

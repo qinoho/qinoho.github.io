@@ -1,0 +1,126 @@
+#right_content > #music_list {
+  overflow-y: auto;
+  height: calc(100% - 55px)
+}
+#right_content > #music_list > #alumb_music_list > #default_display {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+#alumb_music_list > #default_display > #left_img {
+  width: 35%;
+  height: 600px;
+  background: no-repeat 10% url('../img/002.jfif');
+  margin-right: 50px;
+  
+}
+#alumb_music_list > #default_display > #right_introduction {
+  width: 35%;
+}
+#alumb_music_list > #detils_display {
+  height: 500px;
+  /* background-color: #fff; */
+  display: none;
+  align-items: center;
+}
+
+#detils_display > #dispaly_music_list {
+  height: 95%;
+  width: 55%;
+}
+#detils_display > #dispaly_music_list > ul {
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+  height: 100%;
+  padding: 0;
+  padding-bottom: 5px;
+}
+#detils_display > #dispaly_music_list > ul > li {
+  width: 95%;
+  margin: 0 auto;
+  text-indent:30px;
+  list-style: none;
+  margin-left: 15px;
+  font-size: 15px;
+  height: 46px;
+  line-height: 46px;
+  /* border-radius: 5px; */
+  border-radius: 10px;
+}
+#detils_display > #dispaly_music_list > ul > li:nth-child(even) {
+  background-color: rgb(60, 60, 60);
+}
+#detils_display > #dispaly_music_list > ul > li:hover {
+  cursor: pointer;
+  background: rgba(96, 96, 96, 0.5);
+}
+
+#detils_display > #music_lyric {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 30%;
+  overflow: hidden;
+}
+#detils_display > #music_lyric > div {
+  width: 80%;
+  position: relative;
+  top: 0;
+}
+
+#min_music_list {
+  position: absolute;
+  top: 56px;
+  right: 0;
+  width: 20%;
+  background-color: #313132;
+  border-left: #626262 1px solid;
+  height: calc(100% - 55px);
+  display: none;
+  backdrop-filter: saturate(50%) blur(20px);
+  /* transition: display .5s; */
+  animation: hideIndex 0.3s;
+  /* animation: displayIndex 0.3s; */
+}
+@keyframes hideIndex{
+	0%{ opacity: 0; transform: translate(800px, 0) }
+	100%{opacity: 1; transform: translate(0, 0) }
+}
+
+/* @keyframes displayIndex{
+  0%{ opacity: 1; transform: translate(0, 0) }
+	100%{opacity: 0; transform: translate(800px, 0) }
+} */
+#min_music_list > ul {
+  width: 100%;
+  margin: 10px auto;
+  overflow-y: auto;
+  height: 100%;
+  padding: 0;
+  padding-bottom: 5px;
+}
+#min_music_list > ul > li {
+  width: 95%;
+  margin: 0 auto;
+  text-indent:30px;
+  list-style: none;
+  margin-left: 10px;
+  font-size: 13px;
+  height: 46px;
+  line-height: 46px;
+  /* border-radius: 5px; */
+  border-radius: 10px;
+}
+#min_music_list > ul > li:nth-child(even) {
+  background-color: rgb(60, 60, 60);
+}
+#min_music_list > ul > li:hover {
+  cursor: pointer;
+  background: rgba(96, 96, 96, 0.5);
+}

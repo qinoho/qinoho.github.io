@@ -1,0 +1,58 @@
+@import url('./top_palyer.css');
+@import url('./left_list.css');
+@import url('./right_content.css');
+@import url('./right_list.css');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #313132;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+
+  -moz-user-select: none; /*火狐FF*/
+    
+  -webkit-user-select: none; /*webkit浏览器*/
+  
+  -ms-user-select: none; /*IE10*/
+  
+  -khtml-user-select: none; /*早期浏览器*/
+
+  -o-user-select: none; /*opera浏览器*/
+    
+  user-select: none;
+}
+
+body:active {
+  cursor: pointer;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(176, 176, 176, 0.5);
+}
+
+#app {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: #acacac;
+}
